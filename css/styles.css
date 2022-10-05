@@ -6,8 +6,13 @@
     box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
   }
+ 
+  .grid-content{
+
+  }
+  .image
   a{
-    text-decoration: none;
+    text-decoration: none ;
   }
   body{
     font-family: montserrat;
@@ -16,6 +21,7 @@
     background: white;
     height: 80px;
     width: 100%;
+    /* position: fixed;height: 100px; */
   }
   label.logo{
     padding: 0 100px;
@@ -23,7 +29,7 @@
   }
   nav ul{
     float: right;
-    margin-right: 20px;
+    margin-right: 60px;
     z-index: 100;
   }
   nav ul li{
@@ -36,7 +42,7 @@
     font-size: 17px;
     padding: 7px 13px;
     border-radius: 3px;
-    text-transform: uppercase;
+    text-decoration: none;
     font-weight: 600;
   }
   /* a.active,a:hover{
@@ -63,13 +69,59 @@
   .row{
     width: 100%;
   }
-
+  .hero-section{
+    background-color: #E0E7FA;;
+  }
   .hero-section img{
     width: 100%;
     position: relative;
     right: 0;
+    height: 100%;
   }
+  .hero-section h3{
+    width: 40vw;
+    padding-left: 100px;
+    font-weight: 700;
+    font-size: 2vw;
+    line-height: 40px;
+    color: #1D3557;
+    margin-top: 10vh;
+    margin-bottom: 3vh;
+  }
+  .hero-section h2{
+    width: 30vw;
+    padding-left: 100px;
+    font-weight: 700;
+    font-size: 3.5vw;
+    line-height: 64px;
+    color: #005DE8;
   
+  }
+  .call{
+    border-radius: 100px;
+    width: 200px;
+    height: 60px;
+    background-color: #005DE8;
+    font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+/* identical to box height, or 156% */
+border: none;
+margin-left: 100px;
+color: #FFFFFF;
+  }
+  footer a{
+    text-decoration: none;  
+  color: white;}
+  .hero-section h1{
+    width: 40vw;
+    padding-left: 100px;
+    font-weight: 600;
+    font-size: 3.5vw;
+    line-height: 10vh;
+    color: #1D3557;
+    margin-bottom: 30px;
+  }
   .challenges{
     background: linear-gradient(252.67deg, #161B32 1.16%, #161B32 1.16%, #162054 60.16%);
     padding-top: 50px;
@@ -104,30 +156,30 @@
   .key_challenges .card-body img{
     margin-bottom: 20px;
   }
-  .features{
+  #features{
     padding-top: 60px;
     padding-bottom : 50px ;
   }
-  .features-title h1{
+  #features-title h1{
     font-weight: 700;
     font-size: 40px;
     line-height: 56px;
     color: #1D3557;
   }
-  .features-title h3{
+  #features-title h3{
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
     color: #535252;
     margin-bottom: 50px;
   }
-  .features .card-body{
+  #features .card-body{
     border-radius: 16px;
   }
-  .features .card{
+  #features .card{
     min-height: 470px;
   }
-  .features img{
+  #features img{
     margin-top: 20px;
     margin-left: 20px;
   }
@@ -157,7 +209,7 @@
 }
 
 .card-body:hover .textanim-title {
-  top: 230px;
+  top: 60%;
   transform: translateY(0);
 }
 
@@ -178,7 +230,7 @@
   visibility: visible;
 }
 
-.videosection{
+#videosection{
   
   background: linear-gradient(252.67deg, #161B32 1.16%, #161B32 12.81%, #162054 60.16%);
  
@@ -218,6 +270,8 @@
   width: 100%;
   height: 80%;
   border: none;
+  border: 5px solid black;
+  border-radius: 15px;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
@@ -227,7 +281,7 @@
 }
 
 
-  .why{
+  #why{
     background-color: #F8F8F8;
     padding-bottom: 40px;
   }
@@ -253,14 +307,14 @@
     color: #2960EC;
   }
   
-  .why .card-body{
+  #why .card-body{
     background-color: white;
   }
-  .why .card{
-    height: 280px;
+  #why .card{
+    min-height: 280px;
   }
 
-  .why .card h3{
+  #why .card h3{
     font-weight: 400;
   font-size: 18px;
   line-height: 32px;
@@ -386,24 +440,24 @@
     align-items: center;
     
   }
-  .faq{
+  #faq{
     background-color: #F1F1F1;
     padding-top: 80px;
   }
-  .faq h1{
+  #faq h1{
     font-weight: 700;
     font-size: 40px;
     line-height: 64px;
     color: #1D3557;
     padding-right: 70px;
   }
-  .faq h3{
+  #faq h3{
     font-weight: 400;
     font-size: 18px;
     line-height: 32px;
     color: #535252;
   }
-  .faq h5{
+  #faq h5{
     font-weight: 700;
     font-size: 18px;
     line-height: 32px;
@@ -426,22 +480,23 @@
     color: #111;
     margin: 1rem 0;
     border-radius: 0.5rem;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+    
     padding-top: 20px;
     padding-bottom: 20px;
   }
   .accordion-item-header {
     padding: 0.5rem 3rem 0.5rem 1rem;
     min-height: 3.5rem;
-    line-height: 1.25rem;
+    line-height: 2rem;
     font-weight: bold;
     display: flex;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 24px;
     align-items: center;
     position: relative;
     cursor: pointer;
   }
+  
   .accordion-item-header::after {
     content: "\002B";
     font-size: 2rem;
@@ -465,6 +520,16 @@
   }
   .accordian-item{
 
+  }
+  #why .card img{
+    margin-bottom: 10px;
+  }
+  #why p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #636B75;
+    margin-bottom: 5px;
   }
   @media(max-width:767px) {
     html {
@@ -492,12 +557,79 @@
     .swiper-navBtn{
       display: none;
     }
+    .key_challenges .card-body img{
+      margin-top: 20px;
+    }
+    /* .card-body h5{
+      text-align: center;
+    } */
+    .key_challenges .card-body{
+      text-align: center;
+    }
+    #features .card{
+      min-height: 260px;
+    }
+    #features img{
+      width: 50px;
+      height: 50px;
+    }
+    .card-body:hover .textanim-title {
+      top: 140px;
+      transform: translateY(0);
+  }
+  .iframecontainer{
+    width: 90%;
+    position: relative;
+    left: 5%;
+    height: 300px;
+  }
+  .why-content h1{
+    padding-right: 0;
+  }
+  .extra h1{
+    width: 100%;
+    left: 0;
+  }
+  .extra h3{
+    width: 100%;
+    left: 0;
+  }
+  .hero-section h3{
+    padding-left: 30px;
+    width: 100%;
+    font-weight: 700;
+font-size: 24px;
+line-height: 32px;
+
+color: #1D3557;
+  }
+  .hero-section h2{
+    width: 100%;
+    font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+padding-left: 30px;
+color: #005DE8;
+
+  }
+  .hero-section h1{
+    padding-left: 30px;
+    width: 100%;
+    font-weight: 700;
+font-size: 28px;
+line-height: 32px;
+
+color: #1D3557;
+  }
+  .call{
+    margin-left: 30px;
+  }
   }
   
   @media (max-width: 952px){
     label.logo{
       font-size: 30px;
-      padding-left: 50px;
+      padding-left: 20px;
     }
     nav ul li a{
       font-size: 16px;
@@ -510,7 +642,7 @@
     hr{
       display: none;
     }
-    ul{
+    nav ul{
       position: fixed;
       width: 100%;
       height: 100vh;
@@ -543,8 +675,11 @@
   .pulsel{
     margin-bottom: 30px;
   }
+  ul{
+    padding-left: 0;
+  }
   footer h1{
-    width: 50%;
+    width: 70%;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
@@ -581,4 +716,14 @@
     color:  #E7E7E7;
     margin-bottom: 20px;
   }
-   
+  @media only screen and (min-device-width: 768px) and (max-device-width: 991px){
+    .challenges h1{
+      font-size: 32px;
+      padding-right: 0;
+    }
+  }
+  @media (max-width: 576px){
+    .col-sm-6{
+      width: 50%;
+    }
+  }
