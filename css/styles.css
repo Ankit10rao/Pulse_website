@@ -203,10 +203,10 @@ color: #FFFFFF;
   position: absolute;
   left: 30px;
   right: 0;
-  top: 80%;
+  bottom: 5%;
   transform: translateY(-50%);
   text-align: left;
-  transition: 1s;
+  transition: 1.5s;
   font-weight: 700;
   font-size: 24px;
   line-height: 40px;
@@ -215,7 +215,7 @@ color: #FFFFFF;
 }
 
 .card-body:hover .textanim-title {
-  top: 60%;
+  bottom: 30%;
   transform: translateY(0);
 }
 
@@ -224,10 +224,13 @@ color: #FFFFFF;
   left: 30px;
   top: 600px;
   opacity: 0.5;
-  transition: 1s;
+  transition: 1.5s;
   text-align: left;
   visibility: hidden;
-  color: #FDFEFF;
+  color: white;
+  font-weight: 800;
+  font-size: 18px;
+line-height: 28px;
 }
 
 .card-body:hover .textanim-hidden {
